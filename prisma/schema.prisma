@@ -13,5 +13,24 @@ datasource db {
 model companies {
   id   String @id @default(auto()) @map("_id") @db.ObjectId
   name String @unique 
-  cnpj String 
+  cnpj String @unique
+}
+model users {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @unique 
+  cpf String @unique
+}
+model sectors {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @unique 
+}
+model okrs {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @unique 
+  keys keys[]   
+}
+model keys {
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
+  name String @unique 
+  okr okrs @relation(fields: [name], references: [id])
 }
