@@ -1,9 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import * as S from '../assets/Styles/Home'
 
 export default function Home() {
   return (
-    <div>oi</div>
+    <S.Div>oi</S.Div>
   )
 }
