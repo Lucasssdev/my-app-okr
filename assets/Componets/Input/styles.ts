@@ -6,10 +6,11 @@ export const Div = styled.div`
     align-items: center;
     background-color: beige;
     width: 280px;
-    height: 40px;
+    height: 45px;
     padding: 0px 10px ;
+    border-radius: 5px ;
+    padding-left: 5px;  
     
-
 `
 export const Input = styled.input`
     width: 100%;
