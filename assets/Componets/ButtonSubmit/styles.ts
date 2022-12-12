@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const Div = styled.button`
-    display: flex;s
+    display: flex;
     align-items: center;
     
     width: 280px;
