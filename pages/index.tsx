@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import MainLayout from '../assets/Layout/MainLayout';
 import * as S from '../assets/Styles/Home'
 import React from 'react';

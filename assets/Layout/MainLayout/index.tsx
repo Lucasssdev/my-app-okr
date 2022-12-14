@@ -8,7 +8,13 @@ import React from "react";
 //import Cookies from 'js-cookie';
 //import jwt from 'jsonwebtoken'
 import { ReactNode } from "react";
+import logoPurple from '../../../public/logoPurple.svg'
+import Image from "next/image";
+import ButtonMain from "../../../assets/Componets/Buttons/ButtonMain";
+import  InputSearch from "../../../assets/Componets/Inputs/InputSearch";
 
+import {faBuilding, faHouse, faBookBookmark, faSignIn,faMagnifyingGlass, faPlusCircle} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface Props  {
     children: ReactNode
 }
@@ -81,27 +87,28 @@ export default function MainLayout({ children } : Props) {
     return (
         <S.Container>
             <S.Main>
-            <h1>GESTOR OKR</h1>
+            <S.Logo>
+                <Image width={250}  src={logoPurple} alt='logo'/>
+            </S.Logo>
             <S.Options>
                 <div>
-                <span>Setores</span>
-                <span>Setores</span>
-                <span>Setores</span>
-                <span>Setores</span>
+                    <ButtonMain Icon={faHouse} Text={"Inicio"}/>                    
+                    <ButtonMain Icon={faBuilding} Text={"Empresa"}/>
+                    <ButtonMain Icon={faBookBookmark} Text={"Setor"}/>
+                    
                 </div>
                 <div>
-                    <span>Nome user</span>
-                    <span>Sair do Gestor OKR</span>
+                    <a>Nome user</a>
+                    <ButtonMain Icon={faSignIn} Text={'Sair do Gestor OKR'}/>
                 </div>
             </S.Options>
             </S.Main>
             <S.ContainerMain>
                 <S.Header>
                     <S.Search>
-                        <S.InputSearch type='text' id='search'  placeholder="Pesquisar OKR ou Setor"/>
-                        <button onClick={()=>{''}}>bb</button>
+                        <InputSearch Placeholder="Pesquisao OKR ou Setor" Icon={faMagnifyingGlass}/>
                     </S.Search>
-                    <S.Button>Adicionar OKR</S.Button>
+                    <S.Button><FontAwesomeIcon icon={faPlusCircle} size="2xl"/>Adicionar OKR</S.Button>
                 </S.Header>
                 {/*showSearch ?  <SearchList result={result} getSearch={getSearch} search={search}/> : <article>{children}</article> */ }
                 <article>{children}</article>

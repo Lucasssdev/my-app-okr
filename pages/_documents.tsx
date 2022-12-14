@@ -9,8 +9,7 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            // eslint-disable-next-line react/react-in-jsx-scope
+          enhanceApp: (App) => (props) =>  
             sheet.collectStyles(<App {...props} />),
         });
 
