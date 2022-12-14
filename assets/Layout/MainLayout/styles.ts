@@ -15,11 +15,8 @@ export const Container = styled.div`
 export const ContainerMain = styled.div`
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     height: 100vh ;
-    
-   
     article{
        display: flex;
        flex-direction: column;

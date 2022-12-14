@@ -10,7 +10,12 @@ export const Div = styled.div`
     height: 45px;
     background: #13051D;
     border: 1px solid #1E0F29;
-    border-radius: 4px;  
+    border-radius: 4px;
+    &:hover{
+        outline: auto;
+        border: 1px solid;
+        
+    }  
     
 `
 export const Input = styled.input`
@@ -19,7 +24,7 @@ export const Input = styled.input`
     border: hidden;
     background: transparent;
     :focus{
-        outline: none;
+        outline: none 
     }
 `
 export const Icon = styled.div`
