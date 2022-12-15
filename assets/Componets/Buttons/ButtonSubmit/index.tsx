@@ -6,11 +6,13 @@ import React from 'react';
 type Props = {
     Text: string
     Icon: IconProp
+    onClick: React.MouseEventHandler<HTMLButtonElement>
+
 }
 
-function ButtonSubmit({Text, Icon}: Props){
+function ButtonSubmit({Text, Icon, onClick}: Props){
     return(
-        <S.Div>
+        <S.Div onClick={onClick}>
             <S.Text>{Text}</S.Text>
             <S.Icon> 
                 <FontAwesomeIcon icon={Icon} size="lg"/>

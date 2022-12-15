@@ -10,7 +10,7 @@ import Header from '../assets/Layout/GuestLayout/Componets/Header';
 
 
 
-export default function Home() {
+export default function Login() {
   
   
   return (
@@ -31,7 +31,7 @@ export default function Home() {
   </S.Container> 
   )
 }
-Home.getLayout = function getLayout(page: ReactNode) {
+Login.getLayout = function getLayout(page: ReactNode) {
   return (
       <GuestLayout>{page}</GuestLayout>
   )

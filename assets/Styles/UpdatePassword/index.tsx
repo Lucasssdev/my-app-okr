@@ -4,14 +4,18 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap:100px;
+    //gap:100px;
+    //max-height: 300px;
+    
     section{
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-        justify-content: center;
-        max-height: 700px;
+        justify-content: start;
+        padding-top: 100px;
+        max-height: 1000px;
+       
     }
     
 `  
@@ -21,18 +25,17 @@ export const Link = styled.div`
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 100%;
-    justify-content: space-between;
+    margin-top: 30px;
     align-items: center;
     font-weight: 400;
     font-size: 12px;
-    max-height: 200px;
+    justify-self: end;
     
     a{
-        text-decoration: underline;
         &:hover{
             color: #c1b5f6;
             font-size: 13px;
         }
-    }
+        text-decoration: underline;
+    } 
 `  

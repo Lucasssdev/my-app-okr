@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: grid;
     grid-template-columns: auto 500px ;
+    height: 100vh;
+    overflow-x: auto ;
     
 `
 export const WhiteSpacing = styled.div`
     background-color: #221030;
+    overflow-x: auto ;
 `
 export const Content = styled.div`
     background: #190925;
@@ -14,12 +17,11 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    overflow-x: auto ;
     article{
         display: flex;
         flex-direction: column;
         height: 100%;
-        //background-color: blue;
         justify-content: flex-start;
   
     }

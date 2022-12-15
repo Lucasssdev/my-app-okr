@@ -4,14 +4,17 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap:100px;
+    
+    
     section{
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
         justify-content: center;
-        max-height: 700px;
+        padding-top: 100px;
+        max-height: 1000px;
+       
     }
     
 `  
@@ -22,11 +25,13 @@ export const Link = styled.div`
     flex-direction: column;
     width: 300px;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-weight: 400;
     font-size: 12px;
-    max-height: 200px;
+    justify-self: end;
+    padding-bottom: 30px;
+    //max-height: 200px;
     
     a{
         text-decoration: underline;
@@ -34,5 +39,8 @@ export const Link = styled.div`
             color: #c1b5f6;
             font-size: 13px;
         }
-    }
-`  
+    } 
+` 
+export const Message = styled.div`
+    margin-top: 180px;
+` 

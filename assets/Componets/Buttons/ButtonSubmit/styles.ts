@@ -14,13 +14,16 @@ export const Div = styled.button`
     padding-right: 15px;
     &:hover{
         background-color: #6441FF;
-        letter-spacing: 1px;
-    }
-    
+        letter-spacing: 0.5px;
+    } 
+      
     
 `
 export const Text = styled.h2`
     width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
     
 `
 export const Icon = styled.div`

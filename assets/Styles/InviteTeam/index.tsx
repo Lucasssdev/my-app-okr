@@ -5,12 +5,13 @@ export const Container = styled.div`
     flex-direction: column;
     height: 100%;
     gap:100px;
+    max-height: 300px;
+  
     section{
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-        justify-content: center;
         max-height: 700px;
     }
     
@@ -34,5 +35,36 @@ export const Link = styled.div`
             color: #c1b5f6;
             font-size: 13px;
         }
-    }
+    } 
 `  
+export const NewField = styled.div`
+     * {
+        transition-duration: .5s;
+    }
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 20px 0px 90px 0px;
+    button{
+        background-color: transparent;
+        border: hidden;
+        border-radius: 100%;
+        
+    }
+    svg{
+        color: #7559F2;
+        box-shadow: 0px 0px 25px rgba(117, 89, 242, 0.5);
+        border-radius: 100%;
+        &:hover{
+            transform: rotate(360deg);
+            color: #af9ff4;
+            box-shadow: 0px 0px 30px rgba(117, 89, 242, 0.5);
+        }
+    }
+`
+export const DivInput = styled.div`
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+`

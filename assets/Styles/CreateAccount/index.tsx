@@ -5,6 +5,8 @@ export const Container = styled.div`
     flex-direction: column;
     height: 100%;
     gap:100px;
+    max-height: 300px;
+  
     section{
         display: flex;
         flex-direction: column;
@@ -34,5 +36,5 @@ export const Link = styled.div`
             color: #c1b5f6;
             font-size: 13px;
         }
-    }
+    } 
 `  
