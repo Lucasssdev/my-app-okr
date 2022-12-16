@@ -1,9 +1,62 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
+import MainLayout from '../assets/Layout/MainLayout';
+import * as S from '../assets/Styles/Home'
+import React from 'react';
+import { ReactNode } from 'react';
+
 
 export default function Home() {
+  
+  
   return (
-    <div>oi</div>
+  <>
+   
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsum voluptates. Consectetur id dolore cum ea molestiae soluta possimus mollitia tenetur porro labore? Neque quibusdam eius ut dolorum ullam impedit!</p>
+  </> 
+  )
+}
+Home.getLayout = function getLayout(page: ReactNode) {
+  return (
+      <MainLayout>{page}</MainLayout>
   )
 }
