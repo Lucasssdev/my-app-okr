@@ -4,7 +4,7 @@ import * as S from '../../assets/Styles/NewPassword'
 import React, { useState } from 'react';
 import { ReactNode } from 'react';
 import Input from '../../assets/Componets/Inputs/Input';
-import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faArrowRight } from '@fortawesome/pro-thin-svg-icons';
 import ButtonSubmit from '../../assets/Componets/Buttons/ButtonSubmit';
 import Header from '../../assets/Layout/GuestLayout/Componets/Header';
 
@@ -13,7 +13,13 @@ import Header from '../../assets/Layout/GuestLayout/Componets/Header';
 export default function NewPassword() {
 
   const [message,setmessage] = useState<boolean>(false)
-  
+  const [email,setEmail] = useState<string>('')
+
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>)=> {
+    const value = e.target.value;
+    setEmail(value);
+  }
+
   const handleNewPassword = () => {
     setmessage(true)
   }
@@ -26,8 +32,8 @@ export default function NewPassword() {
       <>
         <Header Title='Criar nova senha' SubTitle='Você não está perdido nessa, vamos ter ajudar a criar uma nova senha de acesso'/>
         <section>
-            <Input Placeholder='E-mail' Icon={faBookmark}/>
-            <ButtonSubmit Text='SOLICITAR NOVA SENHA' Icon={faBookmark} onClick={handleNewPassword}/>
+            <Input Placeholder='E-mail' Icon={faEnvelope} Type={'text'} onChange={handleOnChange } Id={'email'} Value={email}/>
+            <ButtonSubmit Text='SOLICITAR NOVA SENHA' Icon={faArrowRight} onClick={handleNewPassword}/>
 
             <S.Link>
                 <span>LEMOBROU QUAL É A SENHA? <a href="../login">CLIQUE AQUI</a></span>

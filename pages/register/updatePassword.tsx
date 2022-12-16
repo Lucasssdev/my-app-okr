@@ -1,10 +1,10 @@
 
 import GuestLayout from '../../assets/Layout/GuestLayout';
 import * as S from '../../assets/Styles/UpdatePassword'
-import React from 'react';
+import React, { useState } from 'react';
 import { ReactNode } from 'react';
 import Input from '../../assets/Componets/Inputs/Input';
-import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import {  faLock, faArrowRight} from '@fortawesome/pro-thin-svg-icons';
 import ButtonSubmit from '../../assets/Componets/Buttons/ButtonSubmit';
 import Header from '../../assets/Layout/GuestLayout/Componets/Header';
 
@@ -12,17 +12,33 @@ import Header from '../../assets/Layout/GuestLayout/Componets/Header';
 
 export default function UpdatePassword() {
   
-  
+  const [Passwords,setPasswords] = useState({  
+    password: '',
+    password2: '',
+  })
+
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>)=> {
+    const value = e.target.value;
+    const key = e.target.id
+    setPasswords((pass) => ({
+        ...pass,
+        [key]: value,
+      }));
+      
+  }
+  const handleOnForm = () => {
+    null
+  }
   return (
   <S.Container>
     <Header Title='Criar nova senha' SubTitle='Você não está perdido nessa, vamos ter ajudar a criar uma nova senha de acesso'/>
     <section>
-        <Input Placeholder='Nova senha' Icon={faBookmark}/>
-        <Input Placeholder='Confirmar nova senha' Icon={faBookmark}/>
-        <ButtonSubmit Text='ATUALIZAR SENHA' Icon={faBookmark}/>
+        <Input Placeholder='Nova senha' Icon={faLock} Type={'password'} onChange={handleOnChange } Id={'password'} Value={Passwords.password}/>
+        <Input Placeholder='Confirmar nova senha' Icon={faLock} Type={'password'} onChange={handleOnChange } Id={'password2'} Value={Passwords.password2}/>
+        <ButtonSubmit Text='ATUALIZAR SENHA' Icon={faArrowRight} onClick={handleOnForm}/>
 
         <S.Link>
-            <span><a href="">CANCELAR</a></span>
+            <span><a href="../login">CANCELAR</a></span>
         </S.Link>
     </section>
     

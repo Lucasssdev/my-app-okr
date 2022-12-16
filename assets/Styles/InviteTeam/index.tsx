@@ -23,8 +23,7 @@ export const Link = styled.div`
     flex-direction: column;
     width: 300px;
     height: 100%;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     font-weight: 400;
     font-size: 12px;
     max-height: 200px;

@@ -15,7 +15,7 @@ function ButtonSubmit({Text, Icon, onClick}: Props){
         <S.Div onClick={onClick}>
             <S.Text>{Text}</S.Text>
             <S.Icon> 
-                <FontAwesomeIcon icon={Icon} size="lg"/>
+                <FontAwesomeIcon icon={Icon} size="2x"/>
             </S.Icon>
         </S.Div>
     )
