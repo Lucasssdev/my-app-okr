@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import settingsCss from "../../../Util/SettingsCss";
 
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
-    background: #221030;
+    background:  ${settingsCss.colorSecond};
     border-radius: 5px;
     display: grid;
     grid-template-columns: 280px auto;
@@ -16,15 +17,17 @@ export const ContainerMain = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+   
     height: 100vh ;
     article{
+        
        display: flex;
        flex-direction: column;
         align-items: center !important;
         width: 100%;
         padding: 30px 25px;
         overflow-y: auto;
-        overflow-x: hidden;
+        overflow-x: hidden; 
     }
    
    
@@ -33,8 +36,9 @@ export const Main = styled.div`
     
     display: flex;
     flex-direction: column;
-    background-color: #190925;
-    
+    background-color:  ${settingsCss.colorPrimary};
+    border-right: 1px solid ${settingsCss.colorThird};
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
     height: 100%;
     h1{
         text-align: center;
@@ -42,7 +46,7 @@ export const Main = styled.div`
     }
 ` 
 export const Options = styled.div`
-    background-color: #190925;
+    background-color: ${settingsCss.colorPrimary};
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -52,15 +56,15 @@ export const Options = styled.div`
     font-weight: 400;
     font-size: 14px;
     button{
+        div{
+            display: none;
+        }
         padding: 40px 20px;
         margin-bottom: 10px;
         background: transparent;
         border: hidden;
         text-align: start;
         &:hover{
-            border-left: solid 5px;
-            border-color: #7559F2;
-            border-radius: -8px;
             cursor: pointer;
         }
     }
@@ -72,6 +76,7 @@ export const Options = styled.div`
     a{
         padding-left: 30px !important;
         padding: 20px;
+        font-family:'Jost', serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -91,7 +96,7 @@ export const Header = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #190925;
+    background: ${settingsCss.colorPrimary};
     padding: 40px 30px;
 
 
@@ -105,27 +110,27 @@ export const Button = styled.button`
         transition-duration: 1s;
     }
     
-    background: #59F2CD;
+    background: ${settingsCss.green};
     box-shadow: 0px 0px 15px rgba(89, 242, 205, 0.55);
     border-radius: 4px;
     width: 229px;
     height: 45px;
     text-transform: uppercase;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    color: #2A7563;
-    
+    color: ${settingsCss.colorTextBlack};
+
     &:hover{
         svg {
                 transform: rotate(360deg);
             }
-        background-color: #81FFE1;
+        background-color:${settingsCss.greenHover};
         box-shadow: 0px 0px 20px rgba(89, 242, 205, 0.55);
         
     }
@@ -135,7 +140,6 @@ export const Logo = styled.image`
    
     img{
         border: hidden;
-    
-    background: transparent;
+        background: transparent;
     }
 `

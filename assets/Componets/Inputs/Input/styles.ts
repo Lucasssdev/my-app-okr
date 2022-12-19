@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import settingsCss from "../../../../Util/SettingsCss";
 export const Div = styled.div`
     display: flex;
     justify-content: space-between;
@@ -9,8 +9,8 @@ export const Div = styled.div`
     padding: 15px 15px ;
     border-radius: 5px ;
     padding-left: 5px;
-    background-color  : #1E0F29 ;
-    color: #7559F2;
+    background-color  :  ${settingsCss.colorInput} ;
+    color: ${settingsCss.colorDetails};
     margin-top: 10px;
     
 `

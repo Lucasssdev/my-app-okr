@@ -79,7 +79,7 @@ export default function InviteTeam() {
                         field.map((input,index)=>{
                             
                             if(index < 5 ){
-                                console.log(input)
+                               
                                 return input
                             }
                         })

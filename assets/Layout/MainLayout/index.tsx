@@ -108,7 +108,7 @@ export default function MainLayout({ children } : Props) {
                     <S.Search>
                         <InputSearch Placeholder="Pesquisao OKR ou Setor" Icon={faMagnifyingGlass}/>
                     </S.Search>
-                    <S.Button><FontAwesomeIcon icon={faPlusCircle} size="2xl"/>Adicionar OKR</S.Button>
+                    <S.Button>Adicionar OKR<FontAwesomeIcon icon={faPlusCircle} size="xl"/></S.Button>
                 </S.Header>
                 {/*showSearch ?  <SearchList result={result} getSearch={getSearch} search={search}/> : <article>{children}</article> */ }
                 <article>{children}</article>

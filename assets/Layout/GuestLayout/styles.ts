@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import settingsCss from "../../../Util/SettingsCss";
  
 export const Container = styled.div`
     display: grid;
@@ -8,11 +9,11 @@ export const Container = styled.div`
     
 `
 export const WhiteSpacing = styled.div`
-    background-color: #221030;
+    background-color: ${settingsCss.colorSecond};
     overflow-x: auto ;
 `
 export const Content = styled.div`
-    background: #190925;
+    background: ${settingsCss.colorPrimary};
     height: 100vh;
     display: flex;
     flex-direction: column;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import settingsCss from "../../../../Util/SettingsCss";
 
 export const Div = styled.div`
     display: flex;
@@ -8,14 +9,9 @@ export const Div = styled.div`
     display: flex;
     width: 340px;
     height: 45px;
-    background: #13051D;
-    border: 1px solid #1E0F29;
+    background: ${settingsCss.colorThird};
     border-radius: 4px;
-    &:hover{
-        outline: auto;
-        border: 1px solid;
-        
-    }  
+   
     
 `
 export const Input = styled.input`

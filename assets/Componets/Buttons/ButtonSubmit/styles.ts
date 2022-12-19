@@ -1,5 +1,7 @@
 /* eslint-disable */
+
 import styled from "styled-components";
+import settingsCss from "../../../../Util/SettingsCss";
 
 export const Div = styled.button`
     :last-child{
@@ -8,7 +10,7 @@ export const Div = styled.button`
     
     display: flex;
     align-items: center;
-    background-color: #7559F2;
+    background-color:${settingsCss.colorButton} ;
     border: hidden;
     width: 100%;
     height: 45px;
@@ -20,7 +22,7 @@ export const Div = styled.button`
         }
    
     &:hover{
-        background-color: #6441FF;
+        background-color: ${settingsCss.colorButtonHover};
         //etter-spacing: 0.5px;
         h2{
         padding-right: 0px;

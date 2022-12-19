@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import settingsCss from "../../../Util/SettingsCss";
+
 
 export const Container = styled.div`
     display: flex;
@@ -33,7 +35,7 @@ export const Link = styled.div`
     a{
         text-decoration: underline;
         &:hover{
-            color: #c1b5f6;
+            color:${settingsCss.colorTextLinkHover};
             font-size: 13px;
         }
     } 

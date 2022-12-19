@@ -11,7 +11,9 @@ type Props = {
 function ButtonMain({Text, Icon}: Props){
     return(
         <S.Div>
-           
+            <S.Border> 
+                {/* Borda lateral para hover/select */} 
+            </S.Border>
             <S.Icon> 
                 <FontAwesomeIcon icon={Icon} size="lg"/>
             </S.Icon>

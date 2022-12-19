@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import settingsCss from "../../../Util/SettingsCss";
 
 export const Container = styled.div`
     display: flex;
@@ -31,7 +32,7 @@ export const Link = styled.div`
     a{
         text-decoration: underline;
         &:hover{
-            color: #c1b5f6;
+            color:${settingsCss.colorTextLinkHover};
             font-size: 13px;
         }
     } 
@@ -51,12 +52,12 @@ export const NewField = styled.div`
         
     }
     svg{
-        color: #7559F2;
-        box-shadow: 0px 0px 25px rgba(117, 89, 242, 0.5);
+        color:${settingsCss.colorButton};
+        box-shadow: 0px 0px 25px rgba(117, 89, 242, 0.5);    
         border-radius: 100%;
         &:hover{
             transform: rotate(360deg);
-            color: #af9ff4;
+            color: ${settingsCss.colorButtonHover};
             box-shadow: 0px 0px 30px rgba(117, 89, 242, 0.5);
         }
     }
